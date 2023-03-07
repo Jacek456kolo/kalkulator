@@ -1,2 +1,9 @@
-body {margin: 0
+body {
+	margin: 0px
+}
+
+#kolumny
+{
+margin-left: 40px
+text-aligh: right;
 }
