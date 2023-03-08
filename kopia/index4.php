@@ -35,18 +35,6 @@
 			<input type="submit" name="submit13" value="Dzielenie"><br>
 		</form>
 		
-		<?php if(isset($_POST['submit1'])) {?>
-		<input type="text" name="no1" value="<?php echo 1; ?>">
-		<?php }
-		?>
-
-
-		<?php if(isset($_POST['submit2'])) {?>
-		<input type="text" name="no1" value="2">
-		<?php }
-		?>
-		
-		
 		<?php
 			$sum="";
 			$multiply="";

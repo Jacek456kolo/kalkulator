@@ -35,18 +35,6 @@
 			<input type="submit" name="submit13" value="Dzielenie"><br>
 		</form>
 		
-		<?php if(isset($_POST['submit1'])) {?>
-		<input type="text" name="no1" value="<?php echo 1; ?>">
-		<?php }
-		?>
-
-
-		<?php if(isset($_POST['submit2'])) {?>
-		<input type="text" name="no1" value="2">
-		<?php }
-		?>
-		
-		
 		<?php
 			$sum="";
 			$multiply="";
@@ -88,24 +76,19 @@
 		?>
 		
 		<?php if ($sum) {?>
+			
 			<input type="text" value="<?php echo $sum; ?>">
-		<?php } if($subtract){?>
-			<input type="text" value="<?php echo $subtract; ?>">
 		<?php } if($multiply){?>
 			<input type="text" value="<?php echo $multiply; ?>">
-		<?php } if($divide){?>
-			<input type="text" value="<?php echo $divide; ?>">
-		<?php }		
-		?>
-		
-		
+		<?php } ?>
 		
 		
 		<?php if ($sum) {
-		echo "<input type='text' value=$sum>";
+			
+		echo '<input type="text" value="';  echo $sum; echo ' "> ';
 		 } if($multiply){
-		echo '<input type="text" value=  ';  echo $multiply; echo ' > ';
-		} ?>
+		echo '<input type="text" value="';  echo $multiply; echo ' "> ';
+		 } ?>
 		
 		
 		</div>
@@ -129,11 +112,12 @@
 			<?php echo "<br>"; ?>
 		
 		<?php $zmienna = 3 ?><?php echo "<br>"; ?>
-		<?php echo ("$zmienna"); ?><?php echo ("<br>"); ?>
-		<?php echo ('asd'); ?><?php echo "<br>"; ?>
+		<?php echo ("asd"); ?><?php echo "<br>"; ?>
+		<?php echo ('qwe'); ?><?php echo "<br>"; ?>
 		<?php echo (1); ?><?php echo "<br>"; ?>
 		<?php echo 3; ?><?php echo "<br>"; ?>
-		<?php echo "333das";  echo "<br>"; ?>
+		<?php echo "333das"; ?><?php echo "<br>"; ?>
+		
 		<?php echo "$zmienna"; ?><?php echo "<br>"; ?>
 		<?php echo '$zmiennatekst'; ?><?php echo "<br>"; ?>
 		
