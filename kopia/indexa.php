@@ -126,16 +126,8 @@
 			}
 		?>
 		
-		<?php if ($sum) { ?>
-		<script>
-		
-        document.getElementById("no1").value = <?php echo "$sum"?>;
-		
-		</script>
-		<?php
-		}
-		?>
-			
+		<?php if ($sum) {?>
+			<input type="text" value="<?php echo $sum; ?>">
 		<?php } if($subtract){?>
 			<input type="text" value="<?php echo $subtract; ?>">
 		<?php } if($multiply){?>
