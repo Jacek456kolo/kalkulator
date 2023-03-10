@@ -23,11 +23,11 @@
 			<input type="button" onclick="set7ToInput()" name="button7" id="button7" value="7">
 			<input type="button" onclick="set8ToInput()" name="button8" id="button8" value="8">
 			<input type="button" onclick="set9ToInput()" name="button9" id="button9" value="9">
-			<input type="button" onclick="setIlorToInput()" name="button13" value="/"><br>
+			<input type="submit" name="submit13" value="/"><br>
 			<input type="button" onclick="set4ToInput()" name="button4" id="button4" value="4">
 			<input type="button" onclick="set5ToInput()" name="button5" id="button5" value="5">
 			<input type="button" onclick="set6ToInput()" name="button6" id="button6" value="6">
-			<input type="button" onclick="setIlocToInput()" name="button12" value="*"><br>
+			<input type="submit" name="submit12" value="*"><br>
 			<input type="button" onclick="set1ToInput()" name="button1" id="button1" value="1">
 			<input type="button" onclick="set2ToInput()" name="button2" id="button2" value="2">
 			<input type="button" onclick="set3ToInput()" name="button3" id="button3" value="3">
@@ -98,7 +98,7 @@
 		
 		
 		<script>
-		var val3=0;
+		var val3;
 		var	wynik1=0;
 		var znval1=0;
 		var znval2=0;
@@ -111,7 +111,7 @@
 		{ 
 		if (znval1 != 1) {	
         val3=document.getElementById("no1").value;
-		document.getElementById("no1").value='';
+		document.getElementById("no1").value=val3;
 		
 		document.getElementById("no2").value=val3;
 		
@@ -127,7 +127,7 @@
 		{ 
 		if (znval2 != 1) {	
         val3=document.getElementById("no1").value;
-		document.getElementById("no1").value='';
+		document.getElementById("no1").value=val3;
 		
 		document.getElementById("no2").value=val3;
 		
@@ -136,70 +136,33 @@
 		}
 		</script>		
 		
-		
-		<script>
-		function setIlocToInput()
-		{ 
-		if (znval3 != 1) {	
-        val3=document.getElementById("no1").value;
-		document.getElementById("no1").value='';
-		
-		document.getElementById("no2").value=val3;
-		
-		znval3=1;
-		}
-		}
-		</script>
-		
-		
-		<script>
-		function setIlorToInput()
-		{ 
-		if (znval4 != 1) {	
-        val3=document.getElementById("no1").value;
-		document.getElementById("no1").value='';
-		
-		document.getElementById("no2").value=val3;
-		
-		znval4=1;
-		}
-		}
-		</script>
-		
-		
-		
 		<script>
 		function setWynToInput() {
-			
+		
 		if (znval1==1)
 		{
-		wynik1=Number(val3) + Number(document.getElementById("no1").value);
+		wynik1=val3+document.getElementById("no1").value;
 		document.getElementById("no1").value=wynik1;				
 		}
 		
 		if (znval2==1)
 		{
-		wynik1=Number(val3) - Number(document.getElementById("no1").value);
+		wynik1=val3-document.getElementById("no1").value;
 		document.getElementById("no1").value=wynik1;
 		}
 		
 		if (znval3==1)
 		{
-		wynik1=Number(val3) * Number(document.getElementById("no1").value);
+		wynik1=val3*document.getElementById("no1").value;
 		document.getElementById("no1").value=wynik1;
 		}
 		
 		if (znval4==1)
 		{
-		wynik1=Number(val3) / Number(document.getElementById("no1").value);
+		wynik1=val3/document.getElementById("no1").value;
 		document.getElementById("no1").value=wynik1;
 		}
 		}
-		
-		znval1=0;
-		znval2=0;
-		znval3=0;
-		znval4=0;
 		</script>
 		
 	</body>
