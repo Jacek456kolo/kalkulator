@@ -87,8 +87,6 @@
 		
 		function setClearEToInput() {
 		document.getElementById("no1").value = ""
-		
-		val2=0;
 		}
 		
 		function setClearToInput() {
@@ -106,18 +104,14 @@
 		
 		var val2;
 		function setcToInput() {
-
-			if (Number.isInteger(Number(document.getElementById("no1").value)) == true)
+		
+			if (Number.isInteger(wynik1) == false)
 			{
 			}
-			else
-			{
-			val2=1;
-			}
-			
+			else val2=1;
 			
 		
-			if (val2 != 1) {
+			if ( val2 != 1) {
 				document.getElementById("no1").value = document.getElementById("no1").value + ".";
 				
 				val2=1;
